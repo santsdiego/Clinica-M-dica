@@ -5,34 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CMLife - Home</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style-home.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
 </head>
 
 <body>
     <!--Topo do HTML-->
-    <header>
-        <a class="logo" href="#home.html">
-            <img src="assets/logo.png" alt="">
-        </a>
-        <nav>
-            <a href="#sobre">Sobre</a>
-            <a href="especialidades.html">Especialidades</a>
-            <a href="#contato">Contato</a>
-        </nav>
+    <header class="topo">
+        <div class="container">
+            <div class="topo-titulo">
+                <a class="logo" href="#home.html">
+                    <img src="assets/logo.png" alt="">
+                </a>
+            </div>
+           
+            <nav class="topo-links">
+                <a class="topo-link" href="#sobre">Sobre</a>
+                <a class="topo-link" href="especialidades.html">Especialidades</a>
+                <a class="topo-link" href="#contato">Contato</a>
+            </nav>
+        </div>
     </header>
 
     <!--Conteúdo do HTML-->
     <main>
         <!--Seção Hero-->
-        <section>
-            <div class="hero"></div>
-            <div class="headline">
-                <h1>CLÍNICA MÉDICA LIFE AQUI A GENTE CUIDA DE VOCÊ</h1>
+        <section class="box-visao-geral">
+    
+            <div class="box-visao-geral-titulo">
+                <h1>Clínica Médica Life <br> Aqui a gente cuida de você</h1>
             </div>
         </section>
 
         <!--Secão sobre-->
-        <section id="sobre">
-            <div>
+        <section id="sobre" class="container">
+            <div class="container-titulo">
                 <h2>Sobre a Clinica</h2>
                 <p>
                     Nossa clinica está pronta para receber nossos pacientes através de uma excelente estrutura,
@@ -40,63 +47,75 @@
                 </p>
             </div>
 
-            <div>
-                <img src="assets/medico.jpg" alt="Doutour">
-                <h3>AQUI NA NOSSA CLÍNICA VOCÊ VAI ENCONTRAR:</h3>
-                <ul>
-                    <li>Horário flexível. Atendimentos de Segunda a Sábado</li>
-                    <li>Estacionamento amplo com 600 vagas.</li>
-                    <li>Sala de espera com TVs e Wifi.</li>
-                    <li>Agendamento por telefone ou WhatsApp.</li>
-                    <li>Excelente localização.</li>
-                    <li>Entrega de exames em sua residência.</li>
-                </ul>
+            <div class="box-sobre">
+                <img src="assets/medico.jpg" alt="Imagem de um médico" title="Imagem de um médico">
+                <div>
+                    <h3>AQUI NA NOSSA CLÍNICA VOCÊ VAI ENCONTRAR:</h3>
+                    <ul>
+                        <li>Horário flexível. Atendimentos de Segunda a Sábado</li>
+                        <li>Estacionamento amplo com 600 vagas.</li>
+                        <li>Sala de espera com TVs e Wifi.</li>
+                        <li>Agendamento por telefone ou WhatsApp.</li>
+                        <li>Excelente localização.</li>
+                        <li>Entrega de exames em sua residência.</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <section>
-            <div>
+        <section id="especialidades" class="container">
+            <div class="container-titulo">
                 <h3>Uma Clínica de Multiespecialidade</h3>
                 <p>Nossa Clínica possuí diversas especialidades, como ortopedia, pediatra, geriatria, psicologia, fisioterapia e outros.</p>
             </div>
-            <div class="galeria-especialidades">
-                <figure>
-                    <img src="assets/ortopedia1.png" alt="ortopedia">
-                    <figcaption>ORTOPEDIA</figcaption>
+
+            <div class="box-especialidades">
+                <figure class="box-especialidade">
+                    <img src="assets/ortopedia1.png" alt="Imagem de um Ortopedista" title="Imagem de um Ortopedista">
+                    <figcaption>Ortopedia</figcaption>
                 </figure>
-                <figure>
-                    <img src="assets/pediatra.png" alt="Pediatria">
-                    <figcaption>PEDIATRIA</figcaption>
+
+                <figure class="box-especialidade">
+                    <img src="assets/pediatra.png" alt="Imagem de um Pediatra" title="Imagem de um Pediatra">
+                    <figcaption>Pediatria</figcaption>
                 </figure>
-                <figure>
-                    <img src="assets/geriatra.png" alt="Geriatria">
-                    <figcaption>GERIATRIA</figcaption>
+
+                <figure class="box-especialidade">
+                    <img src="assets/geriatra.png" alt="Imagem de uma Geriatra" title="Imagem de uma Geriatra">
+                    <figcaption>Geriatria</figcaption>
                 </figure>
             </div>
-            <a href="especialidades.html">VER HORÁRIOS</a>
+
+            <div class="box-link-horarios">
+                <a class="link-horarios" href="especialidades.html">Ver Horários</a>
+            </div>
         </section>
 
-        <section id="contato">
-            <h3>Contato</h3>
-            <p>Nossa cliníca está aberta de <span>segunda à sábado das 6:00 às 21:00</span></p>
-            <p>Através do telefone/WhatsApp <span>(21) 99966-5555</span>você pode fazer o agendamento de consultas e exames.</p>
-            <p>Estamos localizados no estacionamento do Via Parque Shopping Av. Ayrton Sena, 3000 - Barra da Tijuca, Rio de Janeiro.</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.1166797096143!2d-43.360893!3d-22.982736499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda2ed54ec2e1%3A0x4431d262cad1d163!2sAv.%20Ayrton%20Senna%2C%203000%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022775-003!5e0!3m2!1spt-BR!2sbr!4v1744069353292!5m2!1spt-BR!2sbr" 
-                width="600" 
-                height="450" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+        <section id="contato" class="container">
+            <div class="container-titulo">
+                <h3>Contato</h3>
+                <p>Nossa cliníca está aberta de <strong>segunda à sábado das 6:00 às 21:00</strong></p>
+                <p>Através do telefone/WhatsApp <strong>(21) 99966-5555</strong>você pode fazer o agendamento de consultas e exames.</p>
+                <p>Estamos localizados no estacionamento do Via Parque Shopping <strong>Av. Ayrton Sena, 3000 - Barra da Tijuca, Rio de Janeiro.</strong></p>
+            </div>
+            
+            <div class="container-rota">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.1166797096143!2d-43.360893!3d-22.982736499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda2ed54ec2e1%3A0x4431d262cad1d163!2sAv.%20Ayrton%20Senna%2C%203000%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022775-003!5e0!3m2!1spt-BR!2sbr!4v1744069353292!5m2!1spt-BR!2sbr" 
+                    width="100%" 
+                    height="350"
+                    frameborder="0" 
+                    style="border:0;" 
+                    allowfullscreen="">
+                </iframe>
+            </div>
         </section>
     </main>
 
     <!--Footer do HTML-->
     <footer>
-        <div class="rodape">
+        <div class="container">
             <figure>
-                <img src="assets/logo.png" alt="Logo CM Life">
+                <img class="topo-logo" src="assets/logo.png" alt="Logo CM Life" title="Logo CM Life">
             </figure>
             <p>Telefone e WhatsApp: (21) 99966-5555</p>
             <p>Endereço: Av. Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro</p>

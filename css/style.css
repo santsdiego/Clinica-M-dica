@@ -70,6 +70,12 @@ main {
 .topo-link:hover {
     color: #004b4c;
 }
+
+@media (max-width: 425px) {
+    .topo .container { flex-direction: column; }
+    .topo-titulo {margin: 10px 0; }
+    .topo-links { width: 100%; border-top: 1px solid #009fa5; justify-content: space-around;}
+}
 /* Fim CSS Topo*/
 
 /* Início CSS Rodapé */

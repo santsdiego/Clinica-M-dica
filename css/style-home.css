@@ -77,3 +77,20 @@
     padding: 10px 20px;
     text-decoration: none;
 }
+
+@media (max-width: 1024px) {
+    .box-visao-geral {height: 400px;}
+}
+
+@media (max-width: 768px) {
+    .box-visao-geral {height: 300px;}
+    .box-sobre img { display: none;}
+    .box-especialidades { justify-content: center;}
+    .box-especialidade {width: calc (100% / 2 - 40px);}
+}
+
+@media (max-width: 425px) {
+    .box-visao-geral { height: 200px;}
+    .box-visao-geral h1 {font-size: 28px;}
+    .box-especialidade {width: 100%;}
+}
